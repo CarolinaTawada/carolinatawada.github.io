@@ -1,0 +1,525 @@
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+
+body {
+    background: linear-gradient(rgb(44, 208, 233),#000F57);
+    background-repeat: no-repeat;
+   
+    
+}
+
+/* Logo */
+
+#logo {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1110px;
+}
+
+/* Parágrafo */
+
+p {
+    font-family: 'Monteserrat',sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0px 300px; /* Largura */
+    line-height: 35px; /* Espaçamento entre linhas */
+}
+
+/* Título*/ 
+
+h1 {
+    font-family: 'Freckle Face', cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 90px;
+    letter-spacing: 5px;
+}
+
+
+h2 {
+
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 10px;
+    letter-spacing: 5px;
+}
+
+
+/* Botão Scroll Down*/
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    margin: 0 640px;
+    display: block;
+    background-size: 14px auto;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    filter: drop-shadow(0 0 0.35rem rgb(35, 12, 99))
+}
+  
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+    60% {
+      -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+  }
+
+/* Menu */
+#menu {
+    width: 100%;
+    position: fixed;
+    top:0px;
+    margin: auto;
+    background: url(SVG/home/bckmenu.png);
+    background-repeat: repeat-x;
+    background-size: 70%;
+    z-index: 1000;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+#menu ul {
+
+    margin:auto;
+    list-style: none;
+}
+
+#menu ul li {
+    display: inline-block;
+   
+}
+
+#menu ul li a {
+    padding: 20px 30px;
+    display: inline-block;
+    color:rgb(17, 66, 99);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-style: normal;
+    margin: 20px 10px;
+}
+
+#menu ul li a :hover {
+    color: #FFFFFF;
+
+}
+
+/* Search Button */
+form{ /* Botão ao todo */
+    position: relative;
+    top: 40px;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px; /* Tamanho do botão */
+}
+
+input{ /* Pesquisa */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{  /* Ícone */
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: rgb(17, 66, 99);
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover{ 
+    width: 200px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: inline-block;
+}
+
+form:hover .fa{
+    background: rgb(17, 66, 99); /* Círculo Fundo */
+    color: white; /* Cor Ícone */
+}
+
+
+/* Bolha */
+#bolha-menu {
+    margin-left: -25px;
+    top: -8px;
+    position: relative;
+    padding: 10px;
+    z-index: -1;  
+}
+
+#bolha-sobre {
+margin-left: -25px;
+top: -8px;
+position: relative;
+padding: 10px;
+z-index: -1;  
+}
+
+#bolha-noticias {
+    margin-left: -27px;
+    top: 2px;
+    position: relative;
+    padding: 10px;
+    z-index: -1;
+}
+
+#bolha-animais {
+    margin-left: -26px;
+    top: 2px;
+    position: relative;
+    padding: 10px;
+    z-index: -1; 
+}
+
+
+#bolha-contato {
+    margin-left: -22px;
+    top: 2px;
+    position: relative;
+    padding: 10px;
+    z-index: -1;
+}
+
+/* Span bolha */
+
+a {
+    display: block;
+}
+
+a span {
+    display: none;
+}
+
+a:hover span {
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+/* Botão voltar para cima */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Sobrepor outros elementos */
+    border: none; 
+    outline: none; 
+    background-color:rgb(255, 255, 255); /* Cor do botão */
+    color: rgb(22, 22, 104); /* Cor texto */
+    cursor: pointer; /* Quando o mouse passar por cima */
+    padding: 15px; 
+    border-radius: 80px; /* Borda botão */
+    font-size: 18px; 
+    font-family: Montserrat;
+    font-weight: bold;
+    
+  }
+  
+#myBtn:hover {
+    background-color: rgb(47, 11, 129); /*Botão*/
+    color:  rgb(240, 240, 255); /*Texto*/
+    font-family: Montserrat;
+    font-weight: bold;
+    filter: drop-shadow(0 0 0.55rem rgb(248, 244, 245)); /*Botão Efeito*/
+  }
+
+
+/* Imagens dos tópicos */
+#sobre { /* SOBRE */
+    background: url(SVG/sobre/BOLHAS.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px; /* Distância de outro tópico */
+}
+
+#extintos { /* ANIMAIS */
+    align-items: center;
+}
+
+#peixe-amarelo {
+    margin: 0 auto;
+    align-items: center;
+    width: 350px;
+}
+#notícias {/* NOTÍCIAS */
+    background-image: url(SVG/impactos/pedras.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size-adjust: none;
+}
+
+#azul {
+    margin: 0 auto;
+    align-items: center;
+    width: 350px;
+}
+
+#polvo { 
+    align-items: center;
+    width: 550px;
+}
+
+#tartaruga {
+    margin: 0 auto;
+    align-items: center;
+    width: 150px;
+}
+
+
+/* Card Principal */
+flip-left { /* AOS Scroll*/
+    transition: 3s;
+}
+
+.box-card { /*Todos os cards*/
+    display: flex;
+    flex-direction: row;
+    padding: 0 70px;
+}
+
+/* Card */
+.card-1 {
+    box-shadow: 0 4px 8px 0 rgba(94, 94, 94, 0.2);
+    transition: 0.2s;
+    background-color: rgba(255, 255, 240, 0.87);
+    width: 300px;
+    height:450px;
+    border-radius: 5px;
+    margin: 0 50px;
+}
+  
+#coral {
+    border-radius: 5px 5px 0 0;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    transition: 1s ease;
+}
+
+#coral:hover {
+    border-radius: 5px 5px 0 0;
+    -webkit-filter: none; 
+    filter: none;
+    transition: 1s ease;
+}
+
+h4 { /* Título */
+    margin: 7px 13px;
+    text-align: center;
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+article { /* Parágrafo */
+    color: rgb(14, 14, 14);
+    font-family: Montserrat;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-1:hover {
+    box-shadow: 0 8px 16px 0 rgba(201, 201, 201, 0.7);
+}
+
+
+.card-1 button { /* Botão*/
+    border: rgba(116, 7, 79, 0.2);
+    border-radius: 4px ;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(14, 150, 150);
+    text-align: center;
+    cursor: pointer;
+    width: 80px;
+    font-size: 14px;
+    margin: 0 110px;
+}
+
+.card-1 button:hover {
+    background-color: rgb(137, 27, 151);
+}
+
+/* Card 2*/
+.card-2 {
+    box-shadow: 0 4px 8px 0 rgba(94, 94, 94, 0.2);
+    transition: 0.2s;
+    background-color: rgba(255, 255, 240, 0.87);
+    width: 300px;
+    height:450px;
+    border-radius: 5px;
+    margin: 0 50px;
+}
+  
+#petroleo {
+    border-radius: 5px 5px 0 0;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    transition: 1s ease;
+}
+
+#petroleo:hover {
+    border-radius: 5px 5px 0 0;
+    -webkit-filter: none; 
+    filter: none;
+    transition: 1s ease;
+}
+.card-2 button:hover {
+    background-color: rgb(137, 27, 151);
+}
+
+.card-2:hover {
+    box-shadow: 0 8px 16px 0 rgba(201, 201, 201, 0.7);
+}
+
+
+.card-2 button { /* Botão*/
+    border: rgba(116, 7, 79, 0.2);
+    border-radius: 4px ;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(14, 150, 150);
+    text-align: center;
+    cursor: pointer;
+    width: 80px;
+    font-size: 14px;
+    margin: 0 110px;
+}
+  
+.card-2 button:hover {
+    background-color: rgb(137, 27, 151);
+}
+
+/* Card 3*/
+.card-3 {
+    box-shadow: 0 4px 8px 0 rgba(94, 94, 94, 0.2);
+    transition: 0.2s;
+    background-color: rgba(255, 255, 240, 0.87);
+    width: 300px;
+    height:450px;
+    border-radius: 5px;
+    margin: 0 50px;
+}
+  
+#national {
+    border-radius: 5px 5px 0 0;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    transition: 1s ease;
+}
+
+#national:hover {
+    border-radius: 5px 5px 0 0;
+    -webkit-filter: none; 
+    filter: none;
+    transition: 1s ease;
+}
+
+.card-3 button:hover {
+    background-color: rgb(137, 27, 151);
+}
+
+.card-3:hover {
+    box-shadow: 0 8px 16px 0 rgba(201, 201, 201, 0.7);
+}
+
+
+.card-3 button { /* Botão*/
+    border: rgba(116, 7, 79, 0.2);
+    border-radius: 4px ;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(14, 150, 150);
+    text-align: center;
+    cursor: pointer;
+    width: 80px;
+    font-size: 14px;
+    margin: 0 110px;
+}
+  
+.card-3 button:hover {
+    background-color: rgb(137, 27, 151);
+}
+
+/*Contato*/
+
+#concha {
+    z-index: -99;
+    width: 1340px;
+}
+

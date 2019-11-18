@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="pt-br"> 
+    
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Nome -->
+
+		<title>Sea Friendly</title>
+
+		<!-- Link CSS-->
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+		<!-- Link JS-->		
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     	<link href="slick-master/slick/slick-theme.css" rel="stylesheet">
+     	<link href="slick-master/slick/slick.css" rel="stylesheet">
+
+
+		<!-- Tipografia -->
+		<link rel="stylesheet" href="https://use.typekit.net/xqd8uoz.css">
+		<link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Freckle+Face&display=swap" rel="stylesheet">
+		
+		@font-face {
+			font-family: DK Magical Brush;
+			src: url (sansation_light.woff);
+		}
+
+		div {
+			font-family:DK Magical Brush;
+		}
+
+		<!-- Search Button -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	
+		<!-- AOS -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	</head>
+
+    <body>
+
+		 <!-- Logo -->
+
+		<section id="home">
+		
+			<div class="logo"><img src="SVG/home/logo.svg" alt="logo" id="logo">
+
+			<!-- Botão Scroll Down -->
+
+			<a href="#sobre" class="scroll-down"><img src="SVG/home/SETA.svg" style="width: 70px;" alt="seta">
+			</a>
+		
+			<!-- Back to top button -->
+			<button onclick="topFunction()" id="myBtn">TOP</button>
+		
+		</div> 
+
+	</section>
+
+	 <!-- Menu -->
+
+	<section id="menu">
+		<nav>
+			<ul>
+				<li><a href="#home">HOME<span><img src="SVG/home/bolha.svg"  style="width: 80px;" id="bolha-menu" alt="bolha"/></span></a></li>
+				<li><a href="#sobre">SOBRE<span><img src="SVG/home/bolha.svg"  style="width: 80px;" id="bolha-sobre" alt="bolha"/></span></a></li>
+				<li><a href="#notícias">NOTÍCIAS<span><img src="SVG/sobre/bolha impactosa.svg" style="width: 105px;" id="bolha-noticias" alt="bolha"/></span></a></li>
+				<li><a href="#animais">ANIMAIS<span><img src="SVG/sobre/bolha impactosa.svg" style="width:103px;" id="bolha-animais" alt="bolha"/></span></a></li>
+				<li><a href="#contato">CONTATO<span><img src="SVG/sobre/bolha impactosa.svg" style="width:103px;" id="bolha-contato" alt="bolha"/></span></a></li>
+
+				<!-- Search Button--> 
+				<li class="searchBox">
+				<form action="site.html">
+						<input type="search">
+						<i class="fa fa-search"></i>
+					  </form>
+					</li>
+			</ul>
+		</nav>
+	
+		</section>
+
+	<!-- Sobre -->
+
+	<section id="sobre">
+	
+	<h1>SOBRE</h1>
+	<div>
+	<p>Sea Friendly é uma organização sem fins lucrativos, com interesse em assuntos da vida marinha. 
+	Expondo a sua importância e ameaças. O principal objetivo da plataforma é desmitificar a ideia 
+	de que o mar é perigoso. Ideia usada como argumento para a extinção de diversos animais marinhos.
+	</p>
+	</div>
+		
+	</section>
+	
+	<!-- Notícias -->
+
+	<section id="notícias">
+		<h1>NOTÍCIAS</h1>
+		<div data-aos="flip-left">
+		<div class="box-card">
+		
+		<div class="card-1">
+		<img src="SVG/impactos/foto1.jpg" alt="Coral" style="width:100%" id="coral">
+		<div class="container">
+		  <h4><b>Coral da Amazônia: até onde vai a ação do homem?</b></h4> 
+		  <article>O vazamento do óleo no litoral nordestino não só afetou questão socioeconômica, como também ambiental.</article> 
+		  <a href="corais.html"><button class="btn">Ler mais</button></a>
+		</div>
+	  </div>
+
+	  <div class="card-2">
+			<img src="SVG/impactos/foto2.jpg" alt="Petróleo no Nordeste" style="width:100%" id="petroleo">
+			<div class="container">
+			  <h4><b>Petróleo no Nordeste: entenda o impacto causado</b></h4> 
+			  <article>Estima-se que o plástico tenha uma duração de 450 anos ou nunca, isso mata milhões de animais marinhos todos os anos.</article> 
+			  <a href="petroleo.html"><button class="btn">Ler mais</button></a>
+			</div>
+		  </div>
+
+		 <div class="card-3">
+			<img src="SVG/impactos/foto3.jpg" alt="Capa da National Geographic: plástico ou planeta?" style="width:100%" id="national">
+			<div class="container">
+			<h4><b>Capa da National Geographic:plastic or planet?</b></h4> 
+			<article>Estima-se que o plástico tenha uma duração de 450 anos ou nunca, isso mata milhões de animais marinhos todos os anos. </article> 
+			<a href="national.html"><button class="btn">Ler mais</button></a>
+			</div>
+			</div>
+	
+	</div>
+	</div>
+	</section>
+
+	 <!-- Animais -->
+
+	<section id="animais">
+
+		<h1>ANIMAIS EM EXTINÇÃO</h1>
+
+		<h2>Baleia Azul</h2>
+
+		<div>
+			<p>Maior animal do planeta, a baleia-azul pode pesar mais de 180 toneladas, e medir até 
+					30 metros. O animal está ameaçado de extinção, tendo sido alvo de caça predatória durante 
+					várias décadas. Acredita-se que mais de 200,000 baleias-azuis tenham sido mortas.
+					As maiores baleias do mundo são mais do que meras maravilhas evolucionárias. Ao remover o carbono do oceano, elas podem ajudar a humanidade a combater as mudanças climáticas - um serviço ecossistêmico que pode valer milhões de dólares por baleia, de acordo com uma nova análise feita por economistas do Fundo Monetário Internacional (FMI).
+			
+				</p>
+
+		</div>
+
+	</section>
+
+	<!-- Contato -->
+
+
+	<section id="contato">
+
+		<h1>CONTATO</h1>
+	<div>
+	<img src="SVG/contato/contato.svg" id="concha" alt="Contato">
+	</div>
+	
+	
+
+	</section>
+
+	<!-- JS -->
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<!-- Botão de voltar para cima -->
+    <script>
+	AOS.init();
+	</script>
+
+	<script>
+	//Get the button:
+	mybutton = document.getElementById("myBtn");
+
+	//Quando abaixar a página para 20px do topo, o botão aparece
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+  	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  	} else {
+    mybutton.style.display = "none";
+  	}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+ 	document.body.scrollTop = 0; // For Safari
+  	document.documentElement.scrollTop = 0; //  Chrome, Firefox, IE and Opera
+	}
+	</script>
+	
+	
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	 </body>
+	 
+	</html> 
+
+    
+ 
+
+
+
+     
+
+
+		  
+			

@@ -9,6 +9,10 @@ body {
     background-repeat: no-repeat;
 }
 
+#content {
+    display: none;
+}
+
 /* Título*/ 
 h1 {
     font-family: 'Freckle Face', cursive;
@@ -21,7 +25,7 @@ h1 {
     letter-spacing: 5px; /* Espaço entre letras*/
 }
 
-h5 {
+figcaption {
     font-family: 'Montserrat',sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -32,13 +36,14 @@ h5 {
     line-height: 35px; /* Espaçamento entre linhas */
 }
 
-h6 {
+h2 {
     font-family: 'Montserrat',sans-serif;
     font-weight: bold;
     font-size: 18px;
     color: rgb(255, 255, 255);
     text-align: left;
     padding: 25px 300px ; /* Largura */ 
+    font-style: italic;
 }
 
 /* Parágrafo */
@@ -50,172 +55,6 @@ p {
     color: #FFFFFF;
     padding: 10px 300px; /* Largura */
     line-height: 35px; /* Espaçamento entre linhas */
-}
-
-
-/* Menu */
-#menu {
-    width: 100%;
-    position: fixed;
-    top:0px;
-    margin: auto;
-    background: url(SVG/home/bckmenu.png);
-    background-repeat: repeat-x;
-    background-size: 70%;
-    z-index: 1000;
-}
-
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-}
-
-#menu ul {
-
-    margin:auto;
-    list-style: none;
-}
-
-#menu ul li {
-    display: inline-block;
-   
-}
-
-#menu ul li a {
-    padding: 20px 30px;
-    display: inline-block;
-    color:rgb(17, 66, 99);
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Quicksand';
-    font-weight: bold;
-    font-style: normal;
-    margin: 20px 10px;
-}
-
-#menu ul li a :hover {
-    color: #FFFFFF;
-
-}
-
-/* Bolha */
-#bolha-menu {
-    margin-left: -25px;
-    top: -8px;
-    position: relative;
-    padding: 10px;
-    z-index: -1;  
-}
-
-#bolha-sobre {
-    margin-left: -25px;
-    top: -8px;
-    position: relative;
-    padding: 10px;
-    z-index: -1;  
-}
-
-#bolha-noticias {
-    margin-left: -27px;
-    top: 2px;
-    position: relative;
-    padding: 10px;
-    z-index: -1;
-}
-
-#bolha-animais {
-    margin-left: -26px;
-    top: 2px;
-    position: relative;
-    padding: 10px;
-    z-index: -1; 
-}
-
-
-#bolha-contato {
-    margin-left: -22px;
-    top: 2px;
-    position: relative;
-    padding: 10px;
-    z-index: -1;
-}
-
-/* Span bolha */
-
-a {
-    display: block;
-}
-
-a span {
-    display: none;
-}
-
-a:hover span {
-    display: block;
-    position: absolute;
-    top: 0;
-}
-
-/* Search Button */
-form{ /* Botão ao todo */
-    position: relative;
-    top: 40px;
-    left: 60%;
-    transform: translate(-50%,-50%);
-    transition: all 1s;
-    width: 50px;
-    height: 50px;
-    background: white;
-    box-sizing: border-box;
-    border-radius: 25px;
-    border: 4px solid white;
-    padding: 5px; /* Tamanho do botão */
-}
-
-input{ /* Pesquisa */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;;
-    height: 42.5px;
-    line-height: 30px;
-    outline: 0;
-    border: 0;
-    display: none;
-    font-size: 1em;
-    border-radius: 20px;
-    padding: 0 20px;
-}
-
-.fa{  /* Ícone */
-    box-sizing: border-box;
-    padding: 10px;
-    width: 42.5px;
-    height: 42.5px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
-    color: rgb(17, 66, 99);
-    text-align: center;
-    font-size: 1.2em;
-    transition: all 1s;
-}
-
-form:hover{ 
-    width: 200px;
-    cursor: pointer;
-}
-
-form:hover input{
-    display: inline-block;
-}
-
-form:hover .fa{
-    background: rgb(17, 66, 99); /* Círculo Fundo */
-    color: white; /* Cor Ícone */
 }
 
 /* Botão voltar para cima */
@@ -251,17 +90,16 @@ form:hover .fa{
     background-repeat: no-repeat;
     background-size: 1370px;
     margin-top: 140px;
+    text-align: center;
 }
 
 
 #Foto1 {
       width: 700px;
-      margin: 0 330px;
 }
 
 #Foto2 {
     width: 700px;
-    margin: 0 330px;
     background: url(SVG/impactos/TARTATUGA.svg);
     background-repeat: no-repeat;
     background-size: 90px;
@@ -269,7 +107,6 @@ form:hover .fa{
 
 #Foto4 {
     width: 700px;
-    margin: 0 330px;
     background: url(SVG/sobre/BOLHAS.svg);
     background-repeat: no-repeat;
     background-size: 270px;
@@ -289,13 +126,17 @@ flip-left { /* AOS Scroll*/
 
 /* Card */
 
-h4 { /* Título */
+h3 { /* Título */
     margin: 7px 13px;
     text-align: center;
     font-family: Quicksand;
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
+}
+
+h4 {
+    display: none;
 }
 
 article { /* Parágrafo */
@@ -331,7 +172,7 @@ article { /* Parágrafo */
     filter: none;
     transition: 1s ease;
 }
-.card-1 button:hover {
+.card-1 .btn:hover {
     background-color: rgb(137, 27, 151);
 }
 
@@ -340,7 +181,7 @@ article { /* Parágrafo */
 }
 
 
-.card-1 button { /* Botão*/
+.card-1 .btn { /* Botão*/
     border: rgba(116, 7, 79, 0.2);
     border-radius: 4px ;
     outline: 0;
@@ -351,10 +192,11 @@ article { /* Parágrafo */
     cursor: pointer;
     width: 80px;
     font-size: 14px;
-    margin: 0 110px;
+    margin: 0 100px;
+    text-decoration: none;
 }
   
-.card-1 button:hover {
+.card-1 .btn:hover {
     background-color: rgb(137, 27, 151);
 }
 
@@ -383,7 +225,7 @@ article { /* Parágrafo */
     transition: 1s ease;
 }
 
-.card-3 button:hover {
+.card-3 .btn:hover {
     background-color: rgb(137, 27, 151);
 }
 
@@ -392,7 +234,7 @@ article { /* Parágrafo */
 }
 
 
-.card-3 button { /* Botão*/
+.card-3 .btn { /* Botão*/
     border: rgba(116, 7, 79, 0.2);
     border-radius: 4px ;
     outline: 0;
@@ -403,9 +245,126 @@ article { /* Parágrafo */
     cursor: pointer;
     width: 80px;
     font-size: 14px;
-    margin: 0 110px;
+    margin: 0 100px;
+    text-decoration: none;
 }
   
-.card-3 button:hover {
+.card-3 .btn:hover {
     background-color: rgb(137, 27, 151);
 }
+
+
+@media screen and (max-width: 600px) { /*Textos*/
+    /*Parágrafo*/
+p {
+     font-family: 'Monteserrat',sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     font-style: normal;
+     color: #FFFFFF;
+     text-align: center;
+     padding: 0px 20px; /* Largura */
+     line-height: 25px;
+     margin: 0 20px; /* Espaçamento entre linhas */}
+ 
+     /* Título*/ 
+h1 {
+     font-family: 'Freckle Face', cursive;
+     font-weight: 700;
+     font-style: normal;
+     font-size: 35px;
+     color: #FFFFFF;
+     text-align: center;
+     letter-spacing: 5px;
+     padding: 15px;
+ }
+
+h2 { /* Escrito por */
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: left; 
+    padding: 0px 20px 20px; /* Largura */
+    margin: 0 20px;
+}
+
+figcaption { /*Legenda */
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 35px; /* Espaçamento entre linhas */
+    padding: 0px 20px; /* Largura */
+}}
+
+@media screen and (max-width: 600px) {
+/* Menu */
+
+
+@media screen and (max-width: 600px) {
+    /*Logo*/
+        #logo {
+            width: 100%;
+            margin-bottom: 0;
+        }
+    
+    /*Imagem*/
+        #Foto1, #Foto2, #Foto4{
+            width: 100%;
+            flex-direction: column;
+        }
+        #page3 {
+            background: none;
+        }
+        }
+
+@media screen and (max-width: 600px) {
+/*Card*/
+.card-1, .card-2, .card-3, .box-card{
+    width: 70%;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.card-1 .btn { /* Botão*/
+    border: rgba(116, 7, 79, 0.2);
+    border-radius: 4px ;
+    outline: 0;
+    color: white;
+    background-color: rgb(14, 150, 150);
+    text-align: center;
+    cursor: pointer;
+    width: 80px;
+    font-size: 14px;
+    margin: 0 80px;
+}
+
+.card-2 .btn { /* Botão*/
+    border: rgba(116, 7, 79, 0.2);
+    border-radius: 4px ;
+    outline: 0;
+    color: white;
+    background-color: rgb(14, 150, 150);
+    text-align: center;
+    cursor: pointer;
+    width: 80px;
+    font-size: 14px;
+    margin: 0 80px;
+}
+
+.card-3 .btn { /* Botão*/
+    border: rgba(116, 7, 79, 0.2);
+    border-radius: 4px ;
+    outline: 0;
+    color: white;
+    background-color: rgb(14, 150, 150);
+    text-align: center;
+    cursor: pointer;
+    width: 80px;
+    font-size: 14px;
+    margin: 0 80px;
+}
+}}

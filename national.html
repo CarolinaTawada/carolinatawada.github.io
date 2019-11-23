@@ -24,55 +24,33 @@
 
 		<!-- Tipografia -->
 		<link rel="stylesheet" href="https://use.typekit.net/xqd8uoz.css">
-		<link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Freckle+Face&display=swap" rel="stylesheet">
-        
-        <!-- Search Button -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Freckle+Face&display=swap" rel="stylesheet">
     
-        <!-- AOS -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Search Button -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      
     </head>
     
     <body>
+    
+    <a href="#content">Pular para texto</a>
 
-    <section id="home">
+    <div id="home">
 	
     <!-- Back to top button -->
     <button onclick="topFunction()" id="myBtn">TOP</button>
-    </section>
-                
-     <!-- Menu -->
-
-	<section id="menu">
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME<span><img src="SVG/home/bolha.svg"  style="width: 80px;" id="bolha-menu" alt="bolha"/></span></a></li>
-                    <li><a href="#sobre">SOBRE<span><img src="SVG/home/bolha.svg"  style="width: 80px;" id="bolha-sobre" alt="bolha"/></span></a></li>
-                    <li><a href="#notícias">NOTÍCIAS<span><img src="SVG/sobre/bolha impactosa.svg" style="width: 105px;" id="bolha-noticias" alt="bolha"/></span></a></li>
-                    <li><a href="#animais">ANIMAIS<span><img src="SVG/sobre/bolha impactosa.svg" style="width:103px;" id="bolha-animais" alt="bolha"/></span></a></li>
-                    <li><a href="#doações">DOAÇÕES<span><img src="SVG/sobre/bolha impactosa.svg"  style="width:110px;" id="bolha-doações" alt="bolha"/></span></a></li>
-                    <li><a href="#contato">CONTATO<span><img src="SVG/sobre/bolha impactosa.svg" style="width:103px;" id="bolha-contato" alt="bolha"/></span></a></li>
-    
-                    <!-- Search Button-->
-                    <li class="searchBox">
-                    <form action="site.html">
-                            <input type="search">
-                            <i class="fa fa-search"></i>
-                          </form>
-                        </li>
-                </ul>
-            </nav>
-        
-            </section>
+    </div>
     
     <div id="page3"> 
+    <div id="content">
     <h1>Capa da National Geographic:<br>
     plastic or planet?</h1>
     
-    <h6>Escrito por Carolina Tawada <br><br>
-    10/11/2019</h6>
+    <h2>Escrito por <strong>Carolina Tawada</strong> <br><br>
+    10/11/2019</h2>
 
     <p>
     Estima-se que o plástico tenha uma duração de 450 anos ou nunca, isso mata milhões 
@@ -106,7 +84,9 @@
     <br><br>
     <div data-aos="fade-up"><img src="SVg/impactos/plastic.png" alt="Plástico com formato de Iceberg" id="capa"></div>
     <br><br>
-    <h5>Figura- Capa da National geographic.</h5>
+    <figure>
+    <figcaption>Capa da National geographic.</figcaption>
+    </figure>
     <br><br>
     
     <p>
@@ -127,6 +107,7 @@
 
 
   </div>
+  </div>
 
   <!-- Notícias -->
 
@@ -135,23 +116,26 @@
       <div class="box-card">
       
       <div class="card-1">
-        <img src="SVG/impactos/foto1.jpg" alt="Coral na Amazônia" style="width:100%" id="coral-news">
+        <img src="SVG/impactos/foto1.jpg" alt="Coral na Amazônia" id="coral-news">
         <div class="container">
-          <h4>Coral da Amazônia: até onde vai a ação do homem?</h4> 
-          <article>O vazamento do óleo no litoral nordestino não só afetou questão socioeconômica, como também ambiental.</article> 
-          <a href="corais.html"><button class="btn">Ler mais</button></a>
+          <h3>Coral da Amazônia: até onde vai a ação do homem?</h3> 
+          <article>
+              <h4>Coral</h4>
+              O vazamento do óleo no litoral nordestino não só afetou questão socioeconômica, como também ambiental.</article> 
+          <a href="corais.html" class="btn">Ler mais</a>
         </div>
         </div>
   
        <div class="card-2">
-        <img src="SVG/impactos/foto2.jpg" alt="Petróleo no Nordeste" style="width:100%" id="petroleo">
+        <img src="SVG/impactos/foto2.jpg" alt="Petróleo no Nordeste" id="petroleo">
         <div class="container">
-        <h4><b>Petróleo no Nordeste: entenda o impacto causado</b></h4> 
-        <article>Mancha de petróleo no nordeste já é o maior crime ambiental em extensão da história do país. </article> 
-        <a href="petroleo.html"><button class="btn">Ler mais</button></a>
+        <h3>Petróleo no Nordeste: entenda o impacto causado</h3> 
+        <article>
+            <h4>Petroleo</h4>
+          Mancha de petróleo no nordeste já é o maior crime ambiental em extensão da história do país. </article> 
+        <a href="petroleo.html" class="btn">Ler mais</a>
         </div>
         </div>
-    
     </div>
     </div>
 

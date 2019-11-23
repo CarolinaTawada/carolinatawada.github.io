@@ -24,7 +24,6 @@
 
 		<!-- Tipografia -->
 		<link rel="stylesheet" href="https://use.typekit.net/xqd8uoz.css">
-		<link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Freckle+Face&display=swap" rel="stylesheet">
     <!-- Search Button -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -35,42 +34,24 @@
     </head>
     
     <body>
+    
+    <a href="#content">Pular para texto</a></p>
 
-    <section id="home">
+    <div id="home">
 	
     <!-- Back to top button -->
     <button onclick="topFunction()" id="myBtn">TOP</button>
-    </section>
+    </div>
                 
-     <!-- Menu -->
 
-	<section id="menu">
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME<span><img src="SVG/home/bolha.svg"  style="width: 80px;" id="bolha-menu" alt="bolha"/></span></a></li>
-                    <li><a href="#sobre">SOBRE<span><img src="SVG/home/bolha.svg"  style="width: 80px;" id="bolha-sobre" alt="bolha"/></span></a></li>
-                    <li><a href="#notícias">NOTÍCIAS<span><img src="SVG/sobre/bolha impactosa.svg" style="width: 105px;" id="bolha-noticias" alt="bolha"/></span></a></li>
-                    <li><a href="#animais">ANIMAIS<span><img src="SVG/sobre/bolha impactosa.svg" style="width:103px;" id="bolha-animais" alt="bolha"/></span></a></li>
-                    <li><a href="#contato">CONTATO<span><img src="SVG/sobre/bolha impactosa.svg" style="width:103px;" id="bolha-contato" alt="bolha"/></span></a></li>
-    
-                    <!-- Search Button-->
-                    <li class="searchBox">
-                    <form action="site.html">
-                            <input type="search">
-                            <i class="fa fa-search"></i>
-                          </form>
-                        </li>
-                </ul>
-            </nav>
-        
-            </section>
     
     <div id="page2"> 
+    <div id="content">
     <h1>Coral da Amazônia: <br>
     até onde vai a ação do homem?</h1>
     
-    <h6>Escrito por Carolina Tawada <br><br>
-    10/11/2019</h6>
+    <h2>Escrito por Carolina Tawada <br><br>
+    10/11/2019</h2>
 
     <p>
     O vazamento do óleo no litoral nordestino não só afetou questão socioeconômica,
@@ -79,11 +60,11 @@
     densidade e assim, atinge uma área muito importante do meio marinho que é a
     Costa dos Corais, que tem 130 km entre Alagoas e Pernambuco.</p> <br><br>
     <div data-aos="fade-up"><img src="SVG/impactos/costa-dos-corais.png" alt="Costa dos corais" id="costa"></div>
-    <h5>Figura - Costa dos Corais.</h5>
+    <figure><figcaption>Figura - Costa dos Corais.</figcaption></figure>
     <br><br>
 
     <div data-aos="fade-up"><img src="SVG/impactos/coral.png" alt="Coral" id="coral"></div>
-    <h5>Figura – Coral. </h5>
+    <figure><figcaption>Figura – Coral. </figcaption></figure>
     <br><br>
 
     <p>
@@ -93,10 +74,10 @@
     estes últimos são filtradores da água, ou seja, indicadores de qualidade da água. Caso sejam contaminados, não sobrevivem. Já os responsáveis pela formação de corais, os cnidários. Vão sendo entupidos pelo óleo em sua fase de pólipo, que é sua fase fixa.
     </p><br><br>
     <div data-aos="fade-up"><img src="SVG/impactos/locomocao-cnidarios.png" alt="Água viva" id="agua-viva"></div>
-    <h5>Figura – Água-viva (Cnidários).</h5>
+    <figure><figcaption>Figura – Água-viva (Cnidários).</figcaption></figure>
     <br><br>
     <div data-aos="fade-up"><img src="SVG/impactos/anemona-nemo.png" alt="Anemona (Casa do Nemo)" id="nemo"></div>
-    <h5>Figura – Anemona (Casa do nemo).</h5>
+    <figure><figcaption>Figura – Anemona (Casa do nemo).</figcaption></figure>
     <br><br>
 
     <p>Nos recifes de corais são importantes, pois é uma área importante de alimentação, reprodução e refúgio de muitos animais. E também absorvem o gás carbônico (CO2) presente no oceano e o fixam como parte de sua estrutura física, impedindo que mais CO2 seja jogado na atmosfera e aumente o aquecimento global, segundo o Greenpeace. 
@@ -108,6 +89,7 @@
 
 
   </div>
+  </div>
 
   <!-- Notícias -->
 
@@ -118,21 +100,25 @@
       <div class="card-2">
         <img src="SVG/impactos/foto2.jpg" alt="Petróleo no Nordeste" style="width:100%" id="petroleo">
         <div class="container">
-          <h4><b>Petróleo no Nordeste: entenda o impacto causado</b></h4> 
-          <article>Mancha de petróleo no nordeste já é o maior crime ambiental em extensão da história do país.</article> 
-          <a href="petroleo.html"><button class="btn">Ler mais</button></a>
+          <h3>Petróleo no Nordeste: entenda o impacto causado</h3> 
+          <article>
+              <h4>Petróleo</h4>
+          Mancha de petróleo no nordeste já é o maior crime ambiental em extensão da história do país.</article> 
+          <a href="petroleo.html" class="btn">Ler mais</a>
         </div>
         </div>
   
        <div class="card-3">
         <img src="SVG/impactos/foto3.jpg" alt="Capa da National Geographic: plástico ou planeta?" style="width:100%" id="national">
         <div class="container">
-        <h4><b>Capa da National Geographic:plastic or planet?</b></h4> 
-        <article>Estima-se que o plástico tenha uma duração de 450 anos ou nunca, isso mata milhões de animais marinhos todos os anos. </article> 
-        <a href="national.html"><button class="btn">Ler mais</button></a>
+        <h3>Capa da National Geographic:plastic or planet?</h3> 
+        <article>
+          <h4>National</h4>
+          Estima-se que o plástico tenha uma duração de 450 anos ou nunca, isso mata milhões de animais marinhos todos os anos. </article> 
+        <a href="national.html" class="btn">Ler mais</a>
         </div>
         </div>
-    
+
     </div>
     </div>
 

@@ -265,18 +265,13 @@ a:hover span {
 
 /* Imagens dos tópicos */
 #sobre { /* SOBRE */
-    background: url(SVG/sobre/BOLHAS.svg);
-    background-size: 50%;
+    background: url(SVG/sobre/bolha-sobre.svg);
+    background-size: 40%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50%;
+    background-position-y: 100%;
     padding: 80px; /* Distância de outro tópico */
 }
-
-#extintos { /* ANIMAIS */
-    align-items: center;
-}
-
-
 
 #notícias {/* NOTÍCIAS */
     background-image: url(SVG/impactos/pedras.svg);
@@ -556,15 +551,20 @@ input[type=submit]:hover {
 /* Imagens Slide */
 #baleia {
     width: 80%;
+    display: flex;
+    margin: 0 10%;
 }
 
 #tartaruga {
     width: 50%;
+    display: flex;
+    margin: 0 30%;
 }
 
-#tubarão {
+#tubarao {
     width: 50%;
-    text-align: center;
+    display: flex;
+    margin: 5% 30%;
 }
 
 /* Botões do Slide */
@@ -604,6 +604,7 @@ h2 {
     text-align: center;
     font-size: 2.2em;
     margin-bottom: 30px;
+    margin-top: 5%;
 }
 
 /* Texto animal */
@@ -754,11 +755,6 @@ menu {
         margin-bottom: 0;
     }
 
-/*Imagem*/
-    #concha {
-        width: 100%;
-    }
-}
 
 @media screen and (max-width: 768px) {
 form{ /* Botão ao todo */

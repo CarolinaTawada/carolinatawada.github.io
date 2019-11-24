@@ -1,17 +1,13 @@
 *{
   margin: 0;
-  padding: 0;  
+  padding: 0; 
 }
+
 
 body {
-  /*background: linear-gradient(rgb(44, 208, 233),#000F57);
+  background: linear-gradient(rgb(44, 208, 233),#000F57);
   background-repeat: no-repeat;
-  background-size: cover;*/
-  
-}
-
-#content {
-display: none;
+  background-size: 100%;
 }
 
 /* Título*/ 
@@ -20,73 +16,111 @@ h1 {
   font-weight: 700;
   font-style: normal;
   font-size: 50px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
   letter-spacing: 5px;
   margin: 80px;
+  margin-top: 130px;
+}
+
+/* Título*/ 
+#regForm {
+  background-color: #373d61;
+  background-image: url(SVG/home/PEIXE\ AMARELO\ ROXO.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 30%;
+  margin: 0 auto; 
+  font-family: 'Montserrat';
+  width: 60%;
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 20%; /* Background gradiente */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+input[type="submit"] {
+  display: none;
 }
 
 h2 {
-  font-family: 'Monteserrat',sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 22px;
-  color: rgb(0, 0, 0);
-  text-align: center;
-}
-
-/* Parágrafo */
-p {
-  font-family: 'Monteserrat',sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  font-style: normal;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 0px 300px; /* Largura */
-  line-height: 35px; /* Espaçamento entre linhas */
-}
-
-/*FORMULARIO*/
-
-form  {
-  box-shadow: 0 4px 8px 0 rgb(199, 199, 199);
-  border-radius: 5px;
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-}
-
-input { /* Fontes */
-  font-family: 'Montserrat';
-  font-size: 1em;
-  padding: 20px 30px;
-  margin: 10px 10px;
-  border: 1px solid rgb(133, 133, 133);
-  border-radius: 3px;
-}
-
-.botao { /* Botão*/
-  border: rgba(116, 7, 79, 0.2);
-  border-radius: 4px ;
-  outline: 0;
-  padding: 12px;
   color: white;
-  background-color: rgb(14, 150, 150);
-  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 18px;
+}
+
+h3 {
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 13px;
+}
+
+input, select {
+  padding: 10px 30px; /* Espaçamento entre retângulos */
+  width: 60%;
+  font-size: 17px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  border-radius: 3px;
+  color: rgb(0, 0, 0); /* Escrever texto */
+  margin: 20px;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #d8738c;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: rgb(13, 189, 130);
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: 'Montserrat';
   cursor: pointer;
-  width: 80px;
-  font-size: 14px;
-  margin: 0 100px;
-  text-decoration: none;
-  z-index: 1000 ;
-
+  margin: 10px;
 }
 
-.botao:hover {
-  background-color: rgb(137, 27, 151);
+button:hover {
+  opacity: 0.9;
 }
 
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: rgb(221, 77, 77)
+}
 
 /* Botão voltar para cima */
 #myBtn {

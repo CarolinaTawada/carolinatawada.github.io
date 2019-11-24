@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+
+body {
+    background: linear-gradient(rgb(44, 208, 233),#000F57);
+    background-repeat: no-repeat;
+}
+
+#content {
+    display: none;
+}
+
+/* Título*/ 
+h1 {
+    font-family: 'Freckle Face', cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 39px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 60px; /* Margem Interna*/ 
+    margin:  2% 20%; /* Margem dos lados*/ 
+    letter-spacing: 5px; /* Espaço entre letras*/ 
+}
+
+figcaption {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0px 300px; /* Largura */
+    line-height: 35px; /* Espaçamento entre linhas */
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin:  2% 20%;/* Largura */    
+}
+
+/* Parágrafo */
+p {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: #FFFFFF;
+    margin:  2% 20%; /* Largura */
+    line-height: 35px; /* Espaçamento entre linhas */
+}
+
+/* Menu */
+#menu {
+    width: 100%;
+    position: fixed;
+    top:0px;
+    margin: auto;
+    background: url(SVG/home/bckmenu.png);
+    background-repeat: repeat-x;
+    background-size: 70%;
+    z-index: 1000;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+#menu ul {
+
+    margin:auto;
+    list-style: none;
+}
+
+#menu ul li {
+    display: inline-block;
+   
+}
+
+#menu ul li a {
+    padding: 20px 30px;
+    display: inline-block;
+    color:rgb(17, 66, 99);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-style: normal;
+    margin: 20px 10px;
+}
+
+#menu ul li a :hover {
+    color: #FFFFFF;
+
+}
+
+/* Burger */
+.burger {
+    display: none;
+}
+
+.burger div{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: #FFFFFF;
+}
+
+
+
+/* Bolha */
+#bolha-menu {
+    margin-left: -25px;
+    top: -8px;
+    position: relative;
+    padding: 10px;
+    z-index: -1;  
+    width: 80px;
+}
+
+#bolha-sobre {
+    margin-left: -25px;
+    top: -8px;
+    position: relative;
+    padding: 10px;
+    z-index: -1;
+    width: 80px;
+}
+
+#bolha-noticias {
+    margin-left: -27px;
+    top: 2px;
+    position: relative;
+    padding: 10px;
+    z-index: -1;
+    width: 105px;
+}
+
+#bolha-animais {
+    margin-left: -26px;
+    top: 2px;
+    position: relative;
+    padding: 10px;
+    z-index: -1;
+    width:103px;
+}
+
+
+#bolha-contato {
+    margin-left: -22px;
+    top: 2px;
+    position: relative;
+    padding: 10px;
+    z-index: -1;
+    width:103px;
+}
+
+#bolha-doar {
+    margin-left: -25px;
+    top: -6px;
+    position: relative;
+    padding: 10px;
+    z-index: -1;  
+    width: 80px;
+}
+
+/* Span bolha */
+
+a {
+    display: block;
+}
+
+a span {
+    display: none;
+}
+
+a:hover span {
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+/* Botão voltar para cima */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Sobrepor outros elementos */
+    border: none; 
+    outline: none; 
+    background-color:rgb(255, 255, 255); /* Cor do botão */
+    color: rgb(22, 22, 104); /* Cor texto */
+    cursor: pointer; /* Quando o mouse passar por cima */
+    padding: 15px; 
+    border-radius: 80px; /* Borda botão */
+    font-size: 18px; 
+    font-family: Montserrat;
+    font-weight: bold;
+  }
+  
+#myBtn:hover {
+    background-color: rgb(47, 11, 129); /*Botão*/
+    color:  rgb(240, 240, 255); /*Texto*/
+    font-family: Montserrat;
+    font-weight: bold;
+    filter: drop-shadow(0 0 0.55rem rgb(248, 244, 245)); /*Botão Efeito*/
+  }
+
+/*Imagens*/
+#page3 {
+    background: url(SVG/impactos/pedras.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 140px;
+    text-align: center;
+}
+
+
+#Foto1 {
+      width: 700px;
+}
+
+#Foto2 {
+    width: 700px;
+    background: url(SVG/impactos/TARTATUGA.svg);
+    background-repeat: no-repeat;
+    background-size: 90px;
+}
+
+#Foto4 {
+    width: 700px;
+    background: url(SVG/sobre/BOLHAS.svg);
+    background-repeat: no-repeat;
+    background-size: 270px;
+}
+
+/* Card Principal */
+flip-left { /* AOS Scroll*/
+    transition: 3s;
+}
+
+.box-card { /*Todos os cards*/
+    display: flex;
+    flex-direction: row;
+    padding: 0 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Card */
+
+h3 { /* Título */
+    margin: 7px 13px;
+    text-align: center;
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+h4 {
+    display: none;
+}
+
+article { /* Parágrafo */
+    color: rgb(14, 14, 14);
+    font-family: Montserrat;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Card 1*/
+.card-1 {
+    box-shadow: 0 4px 8px 0 rgba(94, 94, 94, 0.2);
+    transition: 0.2s;
+    background-color: rgba(255, 255, 240, 0.87);
+    width: 300px;
+    height:500px;
+    border-radius: 5px;
+    margin: 10px 50px;
+}
+  
+#coral-news {
+    border-radius: 5px 5px 0 0;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    transition: 1s ease;
+}
+
+#coral-news:hover {
+    border-radius: 5px 5px 0 0;
+    -webkit-filter: none; 
+    filter: none;
+    transition: 1s ease;
+}
+.card-1 .btn:hover {
+    background-color: rgb(137, 27, 151);
+}
+
+.card-1:hover {
+    box-shadow: 0 8px 16px 0 rgba(201, 201, 201, 0.7);
+}
+
+
+.card-1 .btn { /* Botão*/
+    border: rgba(116, 7, 79, 0.2);
+    border-radius: 4px ;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(14, 150, 150);
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 80px;
+    font-size: 14px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+  
+.card-1 .btn:hover {
+    background-color: rgb(137, 27, 151);
+}
+
+/* Card 3*/
+.card-3 {
+    box-shadow: 0 4px 8px 0 rgba(94, 94, 94, 0.2);
+    transition: 0.2s;
+    background-color: rgba(255, 255, 240, 0.87);
+    width: 300px;
+    height:500px;
+    border-radius: 5px;
+    margin: 10px 50px;
+}
+  
+#national {
+    border-radius: 5px 5px 0 0;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    transition: 1s ease;
+}
+
+#national:hover {
+    border-radius: 5px 5px 0 0;
+    -webkit-filter: none; 
+    filter: none;
+    transition: 1s ease;
+}
+
+.card-3 .btn:hover {
+    background-color: rgb(137, 27, 151);
+}
+
+.card-3:hover {
+    box-shadow: 0 8px 16px 0 rgba(201, 201, 201, 0.7);
+}
+
+
+.card-3 .btn { /* Botão*/
+    border: rgba(116, 7, 79, 0.2);
+    border-radius: 4px ;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(14, 150, 150);
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 80px;
+    font-size: 14px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+  
+.card-3 .btn:hover {
+    background-color: rgb(137, 27, 151);
+}
+
+@media only screen and (max-width: 576px){
+    figcaption { 
+        font-size: 4vw; 
+     }
+     h1 {
+        font-size: 8vw ; 
+     }
+     h2 {
+        font-size: 4vw;
+     }
+     h3 {
+        font-size: 5vw;
+     }
+     h4 {
+        font-size: 4vw;
+     }
+     
+}
+
+@media screen and (max-width: 768px) { /*Textos*/
+    /*Parágrafo*/
+p {
+     font-family: 'Monteserrat',sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     font-style: normal;
+     color: #FFFFFF;
+     padding: 0px 20px; /* Largura */
+     line-height: 25px;
+     margin: 0 20px; /* Espaçamento entre linhas */}
+ 
+     /* Título*/ 
+h1 {
+     font-family: 'Freckle Face', cursive;
+     font-weight: 700;
+     font-style: normal;
+     font-size: 35px;
+     color: #FFFFFF;
+     text-align: center;
+     letter-spacing: 5px;
+     padding: 15px;
+     margin-bottom: 20px;
+ }
+
+h2 { /* Escrito por */
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: left; 
+    padding: 0px 20px 20px; /* Largura */
+    margin: 0 20px;
+}
+
+figcaption { /*Legenda */
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 35px; /* Espaçamento entre linhas */
+    padding: 0px 20px; /* Largura */
+}}
+
+@media screen and (max-width: 768px) {
+/* Menu */
+
+
+@media screen and (max-width: 768px) {
+    /*Logo*/
+        #logo {
+            width: 100%;
+            margin-bottom: 0;
+        }
+    
+    /*Imagem*/
+        #Foto1, #Foto2, #Foto4{
+            width: 100%;
+            flex-direction: column;
+        }
+        #page3 {
+            background: none;
+        }
+        }
+}

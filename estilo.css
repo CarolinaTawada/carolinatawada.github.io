@@ -27,7 +27,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1110px;
+    width: 80%;
 }
 
 /* Parágrafo */
@@ -57,26 +57,18 @@ h1 {
 }
 
 
-h2 {
-
-    font-family: 'Quicksand';
-    font-weight: 700;
-    font-style: normal;
-    color: #FFFFFF;
-    text-align: center;
-    margin: 10px;
-    letter-spacing: 5px;
-}
-
 /* Botão Scroll Down*/
 #seta-baixo {
     width: 70px;
+    display: flex;
+    justify-content: center;
 }
 
 .scroll-down {
     position: absolute;
     bottom: 20px;
-    margin: 0 640px;
+    right: 52%;
+    left: 48%;
     display: block;
     background-size: 14px auto;
     z-index: 2;
@@ -84,7 +76,7 @@ h2 {
     animation: bounce 2s infinite 2s;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
-    filter: drop-shadow(0 0 0.35rem rgb(35, 12, 99))
+    filter: drop-shadow(0 0 0.35rem rgb(35, 12, 99));
 }
   
 @keyframes bounce {
@@ -146,7 +138,7 @@ nav{
     text-align: center;
     text-decoration: none;
     font-family: 'Quicksand';
-    font-weight: 600;
+    font-weight: bold;
     font-style: normal;
     margin: 20px 10px;
 }
@@ -168,66 +160,6 @@ nav{
     background: #FFFFFF;
 }
 
-
-/* Search Button */
-form{ /* Botão ao todo */
-    position: relative;
-    top: 40px;
-    left: 60%;
-    transform: translate(-50%,-50%);
-    transition: all 1s;
-    width: 50px;
-    height: 50px;
-    background: white;
-    box-sizing: border-box;
-    border-radius: 25px;
-    border: 4px solid white;
-    padding: 5px; /* Tamanho do botão */
-}
-
-input{ /* Pesquisa */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;;
-    height: 42.5px;
-    line-height: 30px;
-    outline: 0;
-    border: 0;
-    display: none;
-    font-size: 1em;
-    border-radius: 20px;
-    padding: 0 20px;
-}
-
-.fa{  /* Ícone */
-    box-sizing: border-box;
-    padding: 10px;
-    width: 42.5px;
-    height: 42.5px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
-    color: rgb(17, 66, 99);
-    text-align: center;
-    font-size: 1.2em;
-    transition: all 1s;
-}
-
-form:hover{ 
-    width: 200px;
-    cursor: pointer;
-}
-
-form:hover input{
-    display: inline-block;
-}
-
-form:hover .fa{
-    background: rgb(17, 66, 99); /* Círculo Fundo */
-    color: white; /* Cor Ícone */
-}
 
 
 /* Bolha */
@@ -364,7 +296,7 @@ flip-left { /* AOS Scroll*/
     padding: 0 40px;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
 
 /* Card */
@@ -430,7 +362,7 @@ article { /* Parágrafo */
     cursor: pointer;
     width: 80px;
     font-size: 14px;
-    margin: 0 100px;
+    margin: 0 auto;
     text-decoration: none;
 }
 
@@ -483,7 +415,7 @@ article { /* Parágrafo */
     cursor: pointer;
     width: 80px;
     font-size: 14px;
-    margin: 17px 100px;
+    margin: 0 auto;
     text-decoration: none;
 }
   
@@ -537,7 +469,7 @@ article { /* Parágrafo */
     cursor: pointer;
     width: 80px;
     font-size: 14px;
-    margin: 0 100px;
+    margin: 0 auto;
     text-decoration: none;
 
 }
@@ -547,21 +479,194 @@ article { /* Parágrafo */
 }
 
 /*Contato*/
-
-
-#concha {
-    z-index: -99;
-    width: 100%;
+.contato-from {
+    background-image: url(SVG/contato/contato.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
 }
 
+label {
+    padding: 6px 6px 6px 0;
+    display: inline-block;
+}
+
+input[type=text] {
+    width: 20%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transform: translate(185%, 900%);
+}
+
+input[type=email] {
+    width: 20%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transform: translate(80%, 1100%);
+}
+  
+input[type=submit] {
+    background-color: rgb(137, 27, 151);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transform: translate(50%, 1320%);
+}
+  
+input[type=submit]:hover {
+    background-color: rgb(170, 0, 94);
+    filter: drop-shadow(0 0 0.2rem rgb(248, 244, 245));
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 50%;
+}
+  
+.col-75 {
+    width: 75%;
+    margin-top: -20%;
+    float: right;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Slideshow container */
+.mySlides {
+    box-sizing: border-box;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Imagens Slide */
+#baleia {
+    width: 80%;
+}
+
+#tartaruga {
+    width: 50%;
+}
+
+#tubarão {
+    width: 50%;
+    text-align: center;
+}
+
+/* Botões do Slide */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    border-radius: 10px 10px;
+    user-select: none;
+}
+  
+/* Posição do "next button" para a direita*/
+.next {
+    right: 0;
+    border-radius: 10px 10px;
+}
+  
+/* Passar o mouse por cima */
+.prev:hover, .next:hover {
+    background-color: rgb(137, 27, 151);
+    filter: drop-shadow(0 0 0.2rem rgb(248, 244, 245));
+}
+
+/* Nome do animal */
+h2 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+/* Texto animal */
+.text {
+    color: #f2f2f2;
+    font-size: 1.2em;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    bottom: 8px;
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+    line-height: 2em;
+}
+  
+/* Indicadores bolinha */
+.dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 10px 6px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: rgb(137, 27, 151);
+    filter: drop-shadow(0 0 0.2rem rgb(248, 244, 245));
+}
+  
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  
 
 
-@media screen and (max-width: 768px) {
-    /*Bolhas*/
-    #bolha-menu, #bolha-noticias, #bolha-sobre, 
-    #bolha-animais, #bolha-contato{
-    display: none;
-    } 
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -724,7 +829,7 @@ form:hover .fa{
 }
 .scroll-down {
     position: absolute;
-    margin: 0 210px;
+    margin: 0 auto;
     text-align: center;
     display: block;
     background-size: 5px auto;
@@ -734,6 +839,5 @@ form:hover .fa{
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
     filter: drop-shadow(0 0 0.35rem rgb(35, 12, 99))
+}}
 }
-}
-

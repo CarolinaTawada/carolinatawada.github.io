@@ -35,7 +35,7 @@
 
     <body>
 	
-	<a href="#content">Pular para sobre</a></p>
+	<a href="#content"></a>
 
 		 <!-- Logo -->
 
@@ -68,15 +68,9 @@
 			<li><a href="#contato">CONTATO<span><img src="SVG/sobre/bolha-maior.svg" id="bolha-contato" alt="bolha"/></span></a></li>
 				
 			<!-- Button Doar--> 
-			<li><a href="doar 1.html" class="button">DOAR<span><img src="SVG/home/bolha.svg" id="bolha-doar" alt="bolha"/></span></a></li>
+			<li><a href= "doar-1.html" class="button">DOAR<span><img src="SVG/home/bolha.svg" id="bolha-doar" alt="bolha"/></span></a></li>
 			
-			<!-- Search Button--> 
-			<li class="searchBox">
-			<form action="index.html">
-			<input type="submit">
-			<span class="fa fa-search"></span>
-			</form>
-			</li>
+			
 			</ul>
 			 
 			<!-- Burger--> 
@@ -92,7 +86,7 @@
 	<!-- Sobre -->
 
 	<section>
-	<div class="content">
+			<div id="content"></div>
 	<div id="sobre">
 	<h1>SOBRE</h1>
 	<div>
@@ -100,7 +94,6 @@
 	Expondo a sua importância e ameaças. O principal objetivo da plataforma é desmitificar a ideia 
 	de que o mar é perigoso. Ideia usada como argumento para a extinção de diversos animais marinhos.
 	</p>
-	</div>
 	</div>
 	</div>
 	</section>
@@ -156,34 +149,121 @@
 
 	<section>
 	<div id="animais">
+	<h1>ANIMAIS EM EXTINÇÃO</h1>
 
-		<h1>ANIMAIS EM EXTINÇÃO</h1>
+	<div class="slideshow-container">
+		
+		<!-- BALEIA -->
+		<div class="mySlides fade">
+		<img src="SVG/animais/baleia.svg" id="baleia" alt="baleia">
+		<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+		
+		<h2>BALEIA</h2>
+		<div class="text">
+		Como espécies de vida longa, as baleias são 
+		protetoras do ecossistema por aumentar a previsibilidade 
+		e estabilidade destes.  Ao se alimentarem de uma grande 
+		diversidade de peixes reduzem suas populações a níveis 
+		intermediários, moderando a competição entre essas espécies 
+		e impedindo que alguma dessas espécies domine o ambiente e reduza 
+		assim a biodiversidade. Algumas estimativas apontam que a população
+		mundial de baleias-azuis hoje é apenas 2-5% da população histórica 
+		antes da caça. Maior animal do planeta, a baleia-azul pode pesar 
+		mais de 180 toneladas, e medir até 30 metros. O animal está 
+		ameaçado de extinção, tendo sido alvo de caça predatória durante 
+		várias décadas. Acredita-se que mais de 200,000 baleias-azuis 
+		tenham sido mortas. As maiores baleias do mundo são mais do que 
+		meras maravilhas evolucionárias. Ao remover o carbono do oceano, 
+		elas podem ajudar a humanidade a combater as mudanças climáticas 
+		- um serviço ecossistêmico que pode valer milhões de dólares por 
+		baleia, de acordo com uma nova análise feita por economistas do 
+		Fundo Monetário Internacional (FMI).
+	</div>
+		</div>
+		
+		<!-- TARTARUGA -->
+		<div class="mySlides fade">
+		<img src="SVG/animais/TARTATUGA/PRINCIPAL/TATA.svg" id="tartaruga" alt="tartaruga">
+		<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
 
-		<h2>Baleia Azul</h2>
-
-		<div>
-			<p>Maior animal do planeta, a baleia-azul pode pesar mais de 180 toneladas, e medir até 
-					30 metros. O animal está ameaçado de extinção, tendo sido alvo de caça predatória durante 
-					várias décadas. Acredita-se que mais de 200,000 baleias-azuis tenham sido mortas.
-					As maiores baleias do mundo são mais do que meras maravilhas evolucionárias. Ao remover o carbono do oceano, elas podem ajudar a humanidade a combater as mudanças climáticas - um serviço ecossistêmico que pode valer milhões de dólares por baleia, de acordo com uma nova análise feita por economistas do Fundo Monetário Internacional (FMI).
-			
-				</p>
-
+		<h2>TARTARUGA</h2>
+		<div class="text">
+		Existem cinco espécies de tartarugas marinhas atualmente no Brasil.
+		E, infelizmente, todas elas estão em extinção. Embora sua pesca 
+		esteja proibida por lei federal, são comuns os casos de 
+		tartarugas-do-mar que se enroscam acidentalmente nas 
+		redes dos pescadores e morrem. E as dificuldades não param 
+		por aí: como muitos de seus ovos são comidos por predadores, 
+		calcula-se que apenas uma ou duas tartarugas em cada 1000 
+		cheguem à idade adulta.
+		</div>
+		</div>
+					
+		<!-- TUBARÃO -->
+		<div class="mySlides fade">
+		<img src="SVG/animais/TARTATUGA/PRINCIPAL/TUTU.svg" id="tubarao" alt="tubarão">
+		<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+		<h2>TUBARÃO BRANCO</h2>
+		<div class="text">
+		Considerado o maior peixe predador, em termos de tamanho, 
+		o tubarão-branco pode chegar a 7,51 metros e pesar cerca de 2,5 
+		toneladas. Ele é encontrado em todos os oceanos e é protegido 
+		em vários países. O maior risco a esses animais é a pesca 
+		esportiva. Apesar de atacar muitos surfistas, ele não é um 
+		predador de humanos. A sua alimentação é baseada em focas, 
+		leões-marinhos, golfinhos, tartarugas e elefantes-marinhos. 
+		O tubarão-branco é considerado o topo da cadeia alimentar dos
+		oceanos, sendo, portanto, extremamente importante para esse 
+		ambiente, pois atua controlando a população de suas presas, 
+		o que evita, consequentemente, que ela aumente de forma exagerada.
+		</div>
+		</div>
+		
+		<!-- Indicadores/Bolinha -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
 		</div>
 		</div>
 	</section>
 	
-	<h2 id="content">Content title</h2>
 	<!-- Contato -->
 	<section>
-	<div id="contato">
+	<div id="contato"></div>
+		
+	
+	<h1>CONTATO</h1>
+	
+	<!-- Formulário/Contato -->
+	<form action="index.html" method="POST">
+	<div class="contato-from">
 
-		<h1>CONTATO</h1>
-		<div>
-			<img src="SVG/contato/contato.svg" id="concha" alt="Contato">
-		</div>
-	</div>
-	</section>
+	
+	<label for="nome"></label>
+	<input type="text" placeholder="Nome" id="nome">
+
+
+	<label for="email"></label>
+	<input type="email" placeholder="E-mail" id="email">
+
+	<input type="submit" value="Enviar">
+	
+</div>
+</form>	
+	
+</section>
 
 	
 	<!-- Footer -->
@@ -219,6 +299,35 @@
 	}
 	</script>
 	<script src="app.js"></script>
+
+	<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				  slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				  dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+	</script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

@@ -21,8 +21,9 @@ h1 {
     font-size: 39px;
     color: #FFFFFF;
     text-align: center;
-    padding: 90px 60px; /* Margem dos lados*/ 
-    letter-spacing: 5px; /* Espaço entre letras*/
+    padding: 60px; /* Margem Interna*/ 
+    margin:  2% 20%; /* Margem dos lados*/ 
+    letter-spacing: 5px; /* Espaço entre letras*/ 
 }
 
 figcaption {
@@ -37,13 +38,15 @@ figcaption {
 }
 
 h2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     font-family: 'Montserrat',sans-serif;
     font-weight: bold;
     font-size: 18px;
     color: rgb(255, 255, 255);
     text-align: left;
-    padding: 25px 300px ; /* Largura */ 
-    font-style: italic;
+    margin:  2% 20%;/* Largura */    
 }
 
 /* Parágrafo */
@@ -53,7 +56,7 @@ p {
     font-size: 20px;
     font-style: normal;
     color: #FFFFFF;
-    padding: 10px 300px; /* Largura */
+    margin:  2% 20%; /* Largura */
     line-height: 35px; /* Espaçamento entre linhas */
 }
 
@@ -88,7 +91,7 @@ p {
 #page3 {
     background: url(SVG/impactos/pedras.svg);
     background-repeat: no-repeat;
-    background-size: 1370px;
+    background-size: 100%;
     margin-top: 140px;
     text-align: center;
 }
@@ -120,8 +123,9 @@ flip-left { /* AOS Scroll*/
 .box-card { /*Todos os cards*/
     display: flex;
     flex-direction: row;
-    padding: 0 70px;
-    margin: 0 210px 50px;
+    padding: 0 40px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Card */
@@ -156,7 +160,7 @@ article { /* Parágrafo */
     width: 300px;
     height:500px;
     border-radius: 5px;
-    margin: 0 50px;
+    margin: 10px 50px;
 }
   
 #coral-news {
@@ -190,9 +194,12 @@ article { /* Parágrafo */
     background-color: rgb(14, 150, 150);
     text-align: center;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     width: 80px;
     font-size: 14px;
-    margin: 0 100px;
+    margin: 0 auto;
     text-decoration: none;
 }
   
@@ -208,7 +215,7 @@ article { /* Parágrafo */
     width: 300px;
     height:500px;
     border-radius: 5px;
-    margin: 0 50px;
+    margin: 10px 50px;
 }
   
 #national {
@@ -243,9 +250,12 @@ article { /* Parágrafo */
     background-color: rgb(14, 150, 150);
     text-align: center;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     width: 80px;
     font-size: 14px;
-    margin: 0 100px;
+    margin: 0 auto;
     text-decoration: none;
 }
   
@@ -253,8 +263,26 @@ article { /* Parágrafo */
     background-color: rgb(137, 27, 151);
 }
 
+@media only screen and (max-width: 576px){
+    figcaption { 
+        font-size: 4vw; 
+     }
+     h1 {
+        font-size: 8vw ; 
+     }
+     h2 {
+        font-size: 4vw;
+     }
+     h3 {
+        font-size: 5vw;
+     }
+     h4 {
+        font-size: 4vw;
+     }
+     
+}
 
-@media screen and (max-width: 600px) { /*Textos*/
+@media screen and (max-width: 768px) { /*Textos*/
     /*Parágrafo*/
 p {
      font-family: 'Monteserrat',sans-serif;
@@ -262,7 +290,6 @@ p {
      font-size: 18px;
      font-style: normal;
      color: #FFFFFF;
-     text-align: center;
      padding: 0px 20px; /* Largura */
      line-height: 25px;
      margin: 0 20px; /* Espaçamento entre linhas */}
@@ -277,6 +304,7 @@ h1 {
      text-align: center;
      letter-spacing: 5px;
      padding: 15px;
+     margin-bottom: 20px;
  }
 
 h2 { /* Escrito por */
@@ -300,11 +328,11 @@ figcaption { /*Legenda */
     padding: 0px 20px; /* Largura */
 }}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 /* Menu */
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     /*Logo*/
         #logo {
             width: 100%;
@@ -320,51 +348,4 @@ figcaption { /*Legenda */
             background: none;
         }
         }
-
-@media screen and (max-width: 600px) {
-/*Card*/
-.card-1, .card-2, .card-3, .box-card{
-    width: 70%;
-    flex-direction: column;
-    margin: 0 auto;
-    margin-bottom: 20px;
 }
-.card-1 .btn { /* Botão*/
-    border: rgba(116, 7, 79, 0.2);
-    border-radius: 4px ;
-    outline: 0;
-    color: white;
-    background-color: rgb(14, 150, 150);
-    text-align: center;
-    cursor: pointer;
-    width: 80px;
-    font-size: 14px;
-    margin: 0 80px;
-}
-
-.card-2 .btn { /* Botão*/
-    border: rgba(116, 7, 79, 0.2);
-    border-radius: 4px ;
-    outline: 0;
-    color: white;
-    background-color: rgb(14, 150, 150);
-    text-align: center;
-    cursor: pointer;
-    width: 80px;
-    font-size: 14px;
-    margin: 0 80px;
-}
-
-.card-3 .btn { /* Botão*/
-    border: rgba(116, 7, 79, 0.2);
-    border-radius: 4px ;
-    outline: 0;
-    color: white;
-    background-color: rgb(14, 150, 150);
-    text-align: center;
-    cursor: pointer;
-    width: 80px;
-    font-size: 14px;
-    margin: 0 80px;
-}
-}}

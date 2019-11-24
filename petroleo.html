@@ -24,65 +24,43 @@
 
 		<!-- Tipografia -->
 		<link rel="stylesheet" href="https://use.typekit.net/xqd8uoz.css">
-		<link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Freckle+Face&display=swap" rel="stylesheet">
     
-        <!-- Search Button -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Search Button -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     
-        <!-- AOS -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      
     </head>
     
     <body>
+    
+    <a href="#content"></a>
 
-    <section id="home">
+   <div id="home">
 	
     <!-- Back to top button -->
     <button onclick="topFunction()" id="myBtn">TOP</button>
-    </section>
-                
-     <!-- Menu -->
-
-	<section id="menu">
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME<span><img src="SVG/home/bolha.svg"  style="width: 80px;" id="bolha-menu" alt="bolha"/></span></a></li>
-                    <li><a href="#sobre">SOBRE<span><img src="SVG/home/bolha.svg"  style="width: 80px;" id="bolha-sobre" alt="bolha"/></span></a></li>
-                    <li><a href="#notícias">NOTÍCIAS<span><img src="SVG/sobre/bolha impactosa.svg" style="width: 105px;" id="bolha-noticias" alt="bolha"/></span></a></li>
-                    <li><a href="#animais">ANIMAIS<span><img src="SVG/sobre/bolha impactosa.svg" style="width:103px;" id="bolha-animais" alt="bolha"/></span></a></li>
-                    <li><a href="#doações">DOAÇÕES<span><img src="SVG/sobre/bolha impactosa.svg"  style="width:110px;" id="bolha-doações" alt="bolha"/></span></a></li>
-                    <li><a href="#contato">CONTATO<span><img src="SVG/sobre/bolha impactosa.svg" style="width:103px;" id="bolha-contato" alt="bolha"/></span></a></li>
-    
-                    <!-- Search Button-->
-                    <li class="searchBox">
-                    <form action="site.html">
-                            <input type="search">
-                            <i class="fa fa-search"></i>
-                          </form>
-                        </li>
-                </ul>
-            </nav>
-        
-            </section>
+    </div>
     
     <div id="page3"> 
+    <div id="content"></div>
     <h1>Petróleo no Nordeste: <br>
     entenda o impacto causado</h1>
     
-    <h6>Escrito por Carolina Tawada <br><br>
-    10/11/2019</h6>
+    <h2>Escrito por Carolina Tawada <br><br>
+    10/11/2019</h2>
 
     <p>
     A origem do petróleo encontrado em diversos estados do Nordeste: Maranhão, Piauí,
     Ceará, Rio Grande do Norte, Paraíba, Pernambuco, Sergipe, Alagoas e Bahia, 
     a 2km da costa brasileira. <br><br>
     <div data-aos="fade-up"><img src="SVG/impactos/petroleo/foto1.png" alt="Óleo invadindo o mar do litoral nordestino" id="Foto1"></div>
-    <h5>Figura- Petróleo no litoral Brasileiro. </h5>
+    <figure><figcaption>Figura 1- Petróleo no litoral Brasileiro. </figcaption></figure>
     <br><br>
     <div data-aos="fade-up"><img src="SVg/impactos/petroleo/foto3.png" alt="Moradores nordestino e o petróleo na praia" id="Foto2"></div>
-    <h5>Figura- Petróleo no litoral Brasileiro. </h5>
+    <figure><figcaption>Figura 2- Petróleo no litoral Brasileiro. </figcaption></figure>
     <br><br>
     <p>
     Como é um óleo cru, não é de origem brasileira, 
@@ -114,13 +92,12 @@
     Desse modo, toda a cadeia alimentar do ecossistema marinho é prejudicada. 
     </p>
     <div data-aos="fade-up"><img src="SVg/impactos/petroleo/foto4.png" alt="Tartaruga coberta de óleo" id="Foto4"></div>
-    <h5>Figura-Impacto do óleo nos animais marinhos. </h5>
+    <figure><figcaption>Figura 3-Impacto do óleo nos animais marinhos. </figcaption></figure>
     <br><br>
 
     <p>
     <strong>TAGS:</strong> #oceano #seres #petróleo #óleo #extinção #Nordeste #notícias </p>
     <br><br><br>
-
 
   </div>
 
@@ -133,21 +110,25 @@
       <div class="card-1">
         <img src="SVG/impactos/foto1.jpg" alt="Coral na Amazônia" style="width:100%" id="coral-news">
         <div class="container">
-          <h4>Coral da Amazônia: até onde vai a ação do homem?</h4> 
-          <article>O vazamento do óleo no litoral nordestino não só afetou questão socioeconômica, como também ambiental.</article> 
-          <a href="corais.html"><button class="btn">Ler mais</button></a>
+          <h3>Coral da Amazônia: até onde vai a ação do homem?</h3> 
+          <article>
+          <h4>Coral</h4>
+          O vazamento do óleo no litoral nordestino não só afetou questão socioeconômica, como também ambiental.</article> 
+          <a href="corais.html" class="btn">Ler mais</a>
         </div>
         </div>
   
        <div class="card-3">
         <img src="SVG/impactos/foto3.jpg" alt="Capa da National Geographic: plástico ou planeta?" style="width:100%" id="national">
         <div class="container">
-        <h4><b>Capa da National Geographic:plastic or planet?</b></h4> 
-        <article>Estima-se que o plástico tenha uma duração de 450 anos ou nunca, isso mata milhões de animais marinhos todos os anos. </article> 
-        <a href="national.html"><button class="btn">Ler mais</button></a>
+        <h3>Capa da National Geographic:plastic or planet?</h3> 
+        <article>
+            <h4>National</h4>
+          Estima-se que o plástico tenha uma duração de 450 anos ou nunca, isso mata milhões de animais marinhos todos os anos. </article> 
+        <a href="national.html" class="btn">Ler mais</a>
         </div>
         </div>
-    
+
     </div>
     </div>
 
